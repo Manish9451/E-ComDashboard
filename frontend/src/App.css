@@ -1,0 +1,7 @@
+
+.main-content {
+  padding-top: 60px; /* Add space to push content below the navbar */
+  padding-bottom: 60px; /* Optional: if you have a fixed footer */
+  min-height: 100vh;
+  box-sizing: border-box;
+}

@@ -1,0 +1,102 @@
+/* Full page center-aligned background */
+.signup-container {
+  min-height: 100vh;
+  /* background: linear-gradient(135deg, #1e3c72, #2a5298); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Signup form styling */
+.signup-form {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Header */
+.signup-form h2 {
+  text-align: center;
+  color: #1e3c72;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+/* Input fields */
+.signup-form input {
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.signup-form input:focus {
+  border-color: #1e3c72;
+}
+
+/* Button */
+.signup-form button {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.signup-form button:hover {
+  background: #1e3c72;
+  transform: scale(1.03);
+}
+
+/* 📱 Responsive for small screens */
+@media (max-width: 500px) {
+  .signup-form {
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+
+  .signup-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .signup-form input {
+    font-size: 0.95rem;
+    padding: 0.6rem 0.9rem;
+  }
+
+  .signup-form button {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+}
+
+/* Login redirect button */
+.login-redirect {
+  background: none;
+  color: #1e3c72;
+  border: none;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: -0.5rem;
+  transition: color 0.3s ease;
+}
+
+.login-redirect:hover {
+  color: #2a5298;
+}
+
